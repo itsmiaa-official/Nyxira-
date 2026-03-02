@@ -36,6 +36,6 @@ global.ch = { id: '120363345778623279@newsletter' }
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.cyanBright(`✰ [CONFIG] Se han actualizado los ajustes del bot`))
+  console.log(chalk.cyanBright(`✰ [CONFIG] Se han actualizado los ajustes del bot.`))
   import(`${file}?update=${Date.now()}`)
 })
