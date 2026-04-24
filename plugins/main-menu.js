@@ -22,15 +22,15 @@ let handler = async (m, { conn, usedPrefix }) => {
 
     caption: `
 
-> . ﹡ ﹟ 🍁 ׄ ⬭ *¡ʜᴇʟʟᴏ!* ${taguser}
+> . ﹡ ﹟ ✰ ׄ ⬭ *¡ʜᴇʟʟᴏ!* ${taguser}
 
-*ㅤꨶ〆⁾ ㅤׄㅤ⸼ㅤׄ *͜🌷* ㅤ֢ㅤ⸱ㅤᯭִ*
+*ㅤꨶ〆⁾ ㅤׄㅤ⸼ㅤׄ *͜♰* ㅤ֢ㅤ⸱ㅤᯭִ*
 ㅤ𓏸𓈒ㅤׄ *sᴏʏ ::* ${botname}
-ׅㅤ𓏸𓈒ㅤׄ *ᴅᴇᴠᴇʟᴏᴘᴇʀ ::* 𝕮𝖍𝖎𝖓𝖆 💋
+ׅㅤ𓏸𓈒ㅤׄ *ᴅᴇᴠᴇʟᴏᴘᴇʀ ::* @_.benjaxzz
 ׅㅤ𓏸𓈒ㅤׄ *ᴠᴇʀsɪᴏɴ ::* ${vs}
 ׅㅤ𓏸𓈒ㅤׄ *ᴜᴘᴛɪᴍᴇ ::* ${uptime}
 
-> ⸻ \`DOWNLOADER 🌷\`
+> ## \`𑊐𑊐ㅤׅ  𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥ㅤׄ  ത᪲\`
 
 > \`•\` ${usedPrefix}play
 > \`•\` ${usedPrefix}tiktok
@@ -42,18 +42,18 @@ let handler = async (m, { conn, usedPrefix }) => {
 > \`•\` ${usedPrefix}fb
 > \`•\` ${usedPrefix}facebook 
 
-> ⸻ \`INFO 🌷\`
+> ## \`𑊐𑊐ㅤׅ  𝗜𝗡𝗙𝗢ㅤׄ  ത᪲\`
  
 > \`•\` ${usedPrefix}ping
 > \`•\` ${usedPrefix}menu
 
-> ⸻ \`OWNER 🌷\`
+> ## \`𑊐𑊐ㅤׅ 𝗢𝗪𝗡𝗘𝗥ㅤׄ  ത᪲\`
 
 > \`•\` ${usedPrefix}update 
 > \`•\` ${usedPrefix}cleartmp 
 > \`•\` ${usedPrefix}detectar
 
-> ⸻ \`GROUPS 🌷\`
+> ## \`𑊐𑊐ㅤׅ 𝗚𝗥𝗢𝗨𝗣𝗦ㅤׄ  ത᪲\`
  
 > \`•\` ${usedPrefix}kick
 > \`•\` ${usedPrefix}link
@@ -63,7 +63,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 > \`•\` ${usedPrefix}open
 > \`•\` ${usedPrefix}close
 
-> ⸻ \`TOOLS 🌷\`
+> ## \`𑊐𑊐ㅤׅ 𝗧𝗢𝗢𝗟𝗦ㅤׄ  ത᪲\`
 
 > \`•\` ${usedPrefix}s
 > \`•\` ${usedPrefix}sticker
@@ -82,7 +82,7 @@ let handler = async (m, { conn, usedPrefix }) => {
         name: 'cta_url',
         buttonParamsJson: JSON.stringify({
           display_text: 'Channel',
-          url: 'https://whatsapp.com/channel/0029Van1PcoFSAt50tWN4d0x'
+          url: 'https://whatsapp.com/channel/0029Vb7eAg7Jpe8pDsWkKe2w'
         })
       }
     ],
