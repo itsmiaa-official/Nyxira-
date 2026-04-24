@@ -1,5 +1,5 @@
 {
-  "name": "Nezuko",
+  "name": "Nyxira",
   "version": "1.0.0",
   "description": "WhatsApp Bot Multi Device",
   "main": "index.js",
@@ -17,16 +17,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/itsmiaa-official",
+  "homepage": "https://github.com/benjaxzz",
   "author": {
-    "name": "itsmiaa-official"
+    "name": "benjaxzz"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsmiaa-official/Nezuko.git"
+    "url": "git+https://github.com/benjaxzz/Nyxira.git"
   },
   "bugs": {
-    "url": "https://github.com/itsmiaa-official/Nezuko/issues"
+    "url": "https://github.com/benjaxzz/Nyxira/issues"
   },
   "license": "MIT-License",
   "dependencies": {
