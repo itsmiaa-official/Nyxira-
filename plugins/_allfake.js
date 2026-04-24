@@ -6,18 +6,18 @@ import fetch from 'node-fetch'
 let handler = m => m
 handler.all = async function (m, { conn }) {
 
-    global.logo = 'https://files.catbox.moe/l15nkw.jpg' 
-    global.iconorcanal = 'https://files.catbox.moe/mhqpn7.jpg'
-
-    global.idcanal = "120363345778623279@newsletter" 
-    global.nombrecanal = "𝐍ᥱzմk𑄝 𝐂һᥲᥒᥒᥱᥣ | ¡𝖭𝖾𝗐𝗌! 🌷"
+    global.logo = 'https://files.catbox.moe/zxelx0.jpg' 
+    global.iconorcanal = 'https://files.catbox.moe/zxelx0.jpg'
+    
+    global.idcanal = "120363408198325468@newsletter" 
+    global.nombrecanal = "𑊐𑊐ㅤׅ   𝗡𝕪𝘅𝕚𝗿𝕒 𝗖𝕙𝗮𝕟𝗻𝕖𝗹 𝕠𝗳𝕗𝗶𝕔𝗶𝕒𝗹ㅤׄ  ത᪲"
 
     global.rcanal = {
       contextInfo: {
         isForwarded: true,
         forwardedNewsletterMessageInfo: { newsletterJid: idcanal, serverMessageId: 100, newsletterName: nombrecanal },
         externalAdReply: {
-          title: '𝐍ᥱzմk𑄝 🌷 • @its.chinitaaa_',
+          title: '𝐍ᥡ᥊іrᥲ • @_.benjaxzz',
           thumbnailUrl: 'https://chat.whatsapp.com/KAhwtBdTOYlFsbsU8rwo79',
           thumbnail: await (await fetch(global.iconorcanal)).buffer(),
           mediaType: 1,
