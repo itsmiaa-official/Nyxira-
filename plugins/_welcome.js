@@ -72,14 +72,14 @@ END:VCARD`
 
          title: '',
     subtitle: '',
-    footer: `© 𝐍ᥱzմk𑄝 🌷 · ${author} · Welcome`,
+    footer: `© ${author} · Welcome`,
 
     interactiveButtons: [
       {
         name: 'cta_url',
         buttonParamsJson: JSON.stringify({
-          display_text: 'instagram',
-          url: 'https://www.instagram.com/its.chinitaaa_'
+          display_text: 'Channel',
+          url: 'https://whatsapp.com/channel/0029Vb7eAg7Jpe8pDsWkKe2w'
         })
       }
     ],
@@ -123,14 +123,14 @@ END:VCARD`
 
     title: '',
     subtitle: '',
-    footer: `© 𝐍ᥱzմk𑄝 🌷 · ${author} · GoodBye`,
+    footer: `© ${author} · GoodBye`,
 
     interactiveButtons: [
       {
         name: 'cta_url',
         buttonParamsJson: JSON.stringify({
-          display_text: 'instagram',
-          url: 'https://www.instagram.com/its.chinitaaa_'
+          display_text: 'Channel',
+          url: 'https://whatsapp.com/channel/0029Vb7eAg7Jpe8pDsWkKe2w'
         })
       }
     ],
