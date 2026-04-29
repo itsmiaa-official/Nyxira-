@@ -33,7 +33,7 @@ let txt = `
 > ✧ Vaciar grupo.
 \`#dni › #dox\`
 > ✧ Doxea a un usuario (ARG)
-\`#argdox\|
+\`#argdox\`
 > ✧ Doxea un usuario (ARG/COL)
 \`#argdni\`
 > ✧ Información de DNI (ARG)
