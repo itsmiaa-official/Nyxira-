@@ -5,7 +5,15 @@ let mentionedJid = await m.mentionedJid
 let userId = mentionedJid && mentionedJid[0] ? mentionedJid[0] : m.sender
 let totalreg = Object.keys(global.db.data.users).length
 let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
-
+const fechaHora = new Date().toLocaleString('es-AR', {
+  timeZone: 'America/Argentina/Buenos_Aires',
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit'
+})
 let txt = `
 ♰ ─── 𝖠𝖵𝖨𝖲𝖮 𝖣𝖤 𝖲𝖨𝖲𝖳𝖤𝖬𝖠 ─── ♰
 > 𝖧𝗈𝗅𝖺, @${userId.split('@')[0]}. 𝖲𝗈𝗒 *${botname}*...
@@ -43,7 +51,7 @@ await conn.sendMessage(m.chat, {
       mentionedJid: [userId],
       externalAdReply: {
         title: `${botname} | ${vs}`,
-        body: textbot,
+        body: `${fechaHora}`,
         mediaType: 1,
         mediaUrl: redes,
         sourceUrl: redes,
