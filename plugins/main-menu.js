@@ -55,18 +55,26 @@ let icon = await (await fetch(banner)).buffer()
 await conn.sendMessage(m.chat, {
   document: Buffer.from('Menu'),
   mimetype: 'application/pdf',
-  fileName: `${botname} `,
+  fileName: `${botname} 💋`,
   fileLength: 999999999999,
   pageCount: 1,
   caption: txt,
   mentions: [userId],
-  contextInfo: { // ✅ IMPORTANTE
+  contextInfo: {
+    isForwarded: true,
+    forwardingScore: 999,
+    mentionedJid: [userId],
+    forwardedNewsletterMessageInfo: {
+      newsletterJid: '120363345778623279@newsletter',
+      serverMessageId: '0',
+      newsletterName: 'FoudThree bug bot', 
+    },
     externalAdReply: {
       title: `${botname} | ${vs}`,
       body: `${fechaHora}`,
       mediaType: 1,
-      mediaUrl: "https:/github.com",
-      sourceUrl: "https:/github.com",
+      mediaUrl: '',
+      sourceUrl: '',   
       thumbnail: icon, // 👈 ICONO
       renderLargerThumbnail: false, // 👈 ICONO PEQUEÑO
       showAdAttribution: false
