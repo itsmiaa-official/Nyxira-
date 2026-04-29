@@ -53,8 +53,8 @@ await conn.sendMessage(m.chat, {
         title: `${botname} | ${vs}`,
         body: `${fechaHora}`,
         mediaType: 1,
-        mediaUrl: redes,
-        sourceUrl: redes,
+        mediaUrl: '',
+        sourceUrl: '',
         thumbnailUrl: banner,
 
         showAdAttribution: false,
