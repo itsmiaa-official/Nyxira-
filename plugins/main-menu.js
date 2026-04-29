@@ -45,7 +45,8 @@ let txt = `
 > ✧ Elimina a un usuario del grupo.
 *#hidetag › #tag*
 > ✧ Crea una mención invisible.
-
+*#inspect + [enlace]*
+> ✧ ve información de un canal de Whatsapp.
 `.trim()
 
 // 👇 ICONO (usa tu banner o uno pequeño)
