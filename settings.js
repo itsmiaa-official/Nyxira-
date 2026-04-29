@@ -19,7 +19,7 @@ global.vs = '3.0.0'
 global.author = '𝗙𝗼𝘂𝗱𝗧𝗵𝗿𝗲𝗲'
 global.sticker = '𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗰𝗿𝗲𝗮𝘁𝗲𝗱 𝗯𝘆 𝗙𝗼𝘂𝗱𝗧𝗵𝗿𝗲𝗲'
 
-global.banner = 'https://files.catbox.moe/vpv1j2.png'
+global.banner = 'https://files.catbox.moe/v2t8j0.png'
 global.icono = ''
 global.logo = ''
 
