@@ -6,18 +6,18 @@ import moment from 'moment-timezone'
 
 global.botNumber = '' 
 global.owner = [
-  ['5492644996684', '𝐁𝐞𝐧𝐣𝐚', true],
-  ['923297474483', '𝐁𝐞𝐧𝐣𝐚', true],
-  ['5492645765402','𝐁𝐞𝐧𝐣𝐚',true]
+  ['5492644996684', 'dueña', true],
+  ['923297474483', 'dueña', true],
+  ['5492645765402','dueña',true]
 ]
 global.mods = []
 global.prems = []
 global.suittag = ['923297474483']
 
-global.botname = '𝐍ᥡ᥊іrᥲ'
-global.vs = '1.0.0 (Lite) '
-global.author = '@_.𝗯𝗲𝗻𝗷𝗮𝘅𝘇𝘇'
-global.sticker = 's𝗍іᥴkᥱr ᥴrᥱᥲ𝗍ᥱძ ᑲᥡ Nyxira'
+global.botname = '𝗙𝗼𝘂𝗱𝗧𝗵𝗿𝗲𝗲'
+global.vs = '3.0.0'
+global.author = '𝗙𝗼𝘂𝗱𝗧𝗵𝗿𝗲𝗲'
+global.sticker = '𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗰𝗿𝗲𝗮𝘁𝗲𝗱 𝗯𝘆 𝗙𝗼𝘂𝗱𝗧𝗵𝗿𝗲𝗲'
 
 global.banner = 'https://files.catbox.moe/vpv1j2.png'
 global.icono = ''
