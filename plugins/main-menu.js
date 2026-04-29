@@ -60,6 +60,7 @@ await conn.sendMessage(m.chat, {
   pageCount: 1,
   caption: txt,
   mentions: [userId],
+  contextInfo: { // ✅ IMPORTANTE
     externalAdReply: {
       title: `${botname} | ${vs}`,
       body: `${fechaHora}`,
