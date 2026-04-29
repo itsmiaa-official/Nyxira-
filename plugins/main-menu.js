@@ -23,25 +23,25 @@ let txt = `
 
 \`🄲🄾🄼🄰🄽🄳🄾🅂\`
 
-*#𝗁𝖾𝗅𝗉 › #menu*
+\`#𝗁𝖾𝗅𝗉 › #menu\`
 > ✧ 𝖬𝗎𝖾𝗌𝗍𝗋𝖺 𝖾𝗅 𝗆𝖾𝗇𝗎́.
-*#𝗎𝗉𝗍𝗂𝗆𝖾 › #ping*
+\`#𝗎𝗉𝗍𝗂𝗆𝖾 › #ping\`
 > ✧ 𝖳𝗂𝖾𝗆𝗉𝗈 𝖺𝖼𝗍𝗂𝗏𝗈. 
-*#bugnuke › #bug616*
+\`#bugnuke › #bug616\`
 > ✧ crashea a un usuario.
-*#kickall › #vaciar*
+\`#kickall › #vaciar\`
 > ✧ Vaciar grupo.
-*#dni › #dox*
+\`#dni › #dox\`
 > ✧ Doxea a un usuario (ARG)
-*#argdox*
+\`#argdox\|
 > ✧ Doxea un usuario (ARG/COL)
-*#argdni*
+\`#argdni\`
 > ✧ Información de DNI (ARG)
-*#kick › #ban*
+\`#kick › #ban\`
 > ✧ Elimina a un usuario del grupo.
-*#hidetag › #tag*
+\`#hidetag › #tag\`
 > ✧ Crea una mención invisible.
-*#inspect + [enlace]*
+\`#inspect + [enlace]\`
 > ✧ ve información de un canal de Whatsapp
 
 `.trim()
