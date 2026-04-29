@@ -5,18 +5,6 @@ let mentionedJid = await m.mentionedJid
 let userId = mentionedJid && mentionedJid[0] ? mentionedJid[0] : m.sender
 let totalreg = Object.keys(global.db.data.users).length
 let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
-let _uptime = process.uptime() * 1000
-let uptime = clockString(_uptime)
-
-const fechaHora = new Date().toLocaleString('es-AR', {
-  timeZone: 'America/Argentina/Buenos_Aires',
-  day: '2-digit',
-  month: '2-digit',
-  year: 'numeric',
-  hour: '2-digit',
-  minute: '2-digit',
-  second: '2-digit'
-})
 
 let txt = `
 ♰ ─── 𝖠𝖵𝖨𝖲𝖮 𝖣𝖤 𝖲𝖨𝖲𝖳𝖤𝖬𝖠 ─── ♰
@@ -46,40 +34,26 @@ let txt = `
 *#hidetag › #tag*
 > ✧ Crea una mención invisible.
 *#inspect + [enlace]*
-> ✧ ve información de un canal de Whatsapp.
+> ✧ ve información de un canal de Whatsapp
+
 `.trim()
-
-// 👇 ICONO (usa tu banner o uno pequeño)
-let icon = await (await fetch(banner)).buffer()
-
 await conn.sendMessage(m.chat, {
-  document: Buffer.from('Menu'),
-  mimetype: 'application/pdf',
-  fileName: `${botname} 💋`,
-  fileLength: 999999999999,
-  pageCount: 1,
-  caption: txt,
-  mentions: [userId],
-  contextInfo: {
-    isForwarded: true,
-    forwardingScore: 999,
-    mentionedJid: [userId],
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363345778623279@newsletter',
-      serverMessageId: '0',
-      newsletterName: 'FoudThree bug bot', 
-    },
-    externalAdReply: {
-      title: `${botname} | ${vs}`,
-      body: `${fechaHora}`,
-      mediaType: 1,
-      mediaUrl: '',
-      sourceUrl: '',   
-      thumbnail: icon, // 👈 ICONO
-      renderLargerThumbnail: false, // 👈 ICONO PEQUEÑO
-      showAdAttribution: false
+    text: txt,
+    contextInfo: {
+      mentionedJid: [userId],
+      externalAdReply: {
+        title: `${botname} | ${vs}`,
+        body: textbot,
+        mediaType: 1,
+        mediaUrl: redes,
+        sourceUrl: redes,
+        thumbnailUrl: banner,
+
+        showAdAttribution: false,
+        containsAutoReply: true,
+        renderLargerThumbnail: true
+      }
     }
-  }
 }, { quoted: m })
 }
 
@@ -88,11 +62,3 @@ handler.tags = ['main']
 handler.command = ['menu', 'menú', 'help']
 
 export default handler
-
-
-function clockString(ms) {
-let seconds = Math.floor((ms / 1000) % 60)
-let minutes = Math.floor((ms / (1000 * 60)) % 60)
-let hours = Math.floor((ms / (1000 * 60 * 60)) % 24)
-return `${hours}h ${minutes}m ${seconds}s`
-}
