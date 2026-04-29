@@ -51,7 +51,7 @@ await conn.sendMessage(m.chat, {
 
         showAdAttribution: false,
         containsAutoReply: true,
-        renderLargerThumbnail: true
+        renderLargerThumbnail: false
       }
     }
 }, { quoted: m })
