@@ -1,106 +1,88 @@
-let handler = async (m, { conn, usedPrefix }) => {
+import fetch from 'node-fetch'
 
-  const who = m.sender
-  const taguser = `@${who.split('@')[0]}`
-    let _uptime = process.uptime() * 1000
-    let uptime = clockString(_uptime)
+let handler = async (m, { conn, args }) => {
+let mentionedJid = await m.mentionedJid
+let userId = mentionedJid && mentionedJid[0] ? mentionedJid[0] : m.sender
+let totalreg = Object.keys(global.db.data.users).length
+let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime)
 
-  const productMessage = {
-    product: {
-      productImage: { url: banner },
-      productId: '24529689176623820',
-      title: `${botname} |  ${vs}`,
-      description: '',
-      currencyCode: 'USD',
-      priceAmount1000: '0',
-      retailerId: 1677,
-      url: 'https://wa.me/0',
-      productImageCount: 1
-    },
+const fechaHora = new Date().toLocaleString('es-AR', {
+  timeZone: 'America/Argentina/Buenos_Aires',
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit'
+})
 
-    businessOwnerJid: who || '0@s.whatsapp.net',
+let txt = `
+♰ ─── 𝖠𝖵𝖨𝖲𝖮 𝖣𝖤 𝖲𝖨𝖲𝖳𝖤𝖬𝖠 ─── ♰
+> 𝖧𝗈𝗅𝖺, @${userId.split('@')[0]}. 𝖲𝗈𝗒 *${botname}*...
 
-    caption: `
+> \`Aviso:\` Ocupar comandos de b̶u̶g̶s̶ queda bajo tu responsabilidad. 
+> por ese motivo recomiendo ocupar esos comandos con whatsapp anti-crash.
 
-> . ﹡ ﹟ ✰ ׄ ⬭ *¡ʜᴇʟʟᴏ!* ${taguser}
+\`🄲🄾🄼🄰🄽🄳🄾🅂\`
 
-*ㅤꨶ〆⁾ ㅤׄㅤ⸼ㅤׄ *͜♰* ㅤ֢ㅤ⸱ㅤᯭִ*
-ㅤ𓏸𓈒ㅤׄ *sᴏʏ ::* ${botname}
-ׅㅤ𓏸𓈒ㅤׄ *ᴅᴇᴠᴇʟᴏᴘᴇʀ ::* @_.benjaxzz
-ׅㅤ𓏸𓈒ㅤׄ *ᴠᴇʀsɪᴏɴ ::* ${vs}
-ׅㅤ𓏸𓈒ㅤׄ *ᴜᴘᴛɪᴍᴇ ::* ${uptime}
+*#𝗁𝖾𝗅𝗉 › #menu*
+> ✧ 𝖬𝗎𝖾𝗌𝗍𝗋𝖺 𝖾𝗅 𝗆𝖾𝗇𝗎́.
+*#𝗎𝗉𝗍𝗂𝗆𝖾 › #ping*
+> ✧ 𝖳𝗂𝖾𝗆𝗉𝗈 𝖺𝖼𝗍𝗂𝗏𝗈. 
+*#bugnuke › #bug616*
+> ✧ crashea a un usuario.
+*#kickall › #vaciar*
+> ✧ Vaciar grupo.
+*#dni › #dox*
+> ✧ Doxea a un usuario (ARG)
+*#argdox*
+> ✧ Doxea un usuario (ARG/COL)
+*#argdni*
+> ✧ Información de DNI (ARG)
+*#kick › #ban*
+> ✧ Elimina a un usuario del grupo.
+*#hidetag › #tag*
+> ✧ Crea una mención invisible.
 
-> ## \`𑊐𑊐ㅤׅ  𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥ㅤׄ  ത᪲\`
+`.trim()
 
-> \`•\` ${usedPrefix}play
-> \`•\` ${usedPrefix}tiktok
-> \`•\` ${usedPrefix}tt
-> \`•\` ${usedPrefix}pin
-> \`•\` ${usedPrefix}pinterest
-> \`•\` ${usedPrefix}ig
-> \`•\` ${usedPrefix}instagram 
-> \`•\` ${usedPrefix}fb
-> \`•\` ${usedPrefix}facebook 
+// 👇 ICONO (usa tu banner o uno pequeño)
+let icon = await (await fetch(banner)).buffer()
 
-> ## \`𑊐𑊐ㅤׅ  𝗜𝗡𝗙𝗢ㅤׄ  ത᪲\`
- 
-> \`•\` ${usedPrefix}ping
-> \`•\` ${usedPrefix}menu
-
-> ## \`𑊐𑊐ㅤׅ 𝗢𝗪𝗡𝗘𝗥ㅤׄ  ത᪲\`
-
-> \`•\` ${usedPrefix}update 
-> \`•\` ${usedPrefix}cleartmp 
-> \`•\` ${usedPrefix}detectar
-
-> ## \`𑊐𑊐ㅤׅ 𝗚𝗥𝗢𝗨𝗣𝗦ㅤׄ  ത᪲\`
- 
-> \`•\` ${usedPrefix}kick
-> \`•\` ${usedPrefix}link
-> \`•\` ${usedPrefix}tag
-> \`•\` ${usedPrefix}promote
-> \`•\` ${usedPrefix}demote
-> \`•\` ${usedPrefix}open
-> \`•\` ${usedPrefix}close
-
-> ## \`𑊐𑊐ㅤׅ 𝗧𝗢𝗢𝗟𝗦ㅤׄ  ത᪲\`
-
-> \`•\` ${usedPrefix}s
-> \`•\` ${usedPrefix}sticker
-> \`•\` ${usedPrefix}wm
-> \`•\` ${usedPrefix}toimg
-> \`•\` ${usedPrefix}inspect
-
-`.trim(),
-
-    title: '',
-    subtitle: '',
-    footer: `© ${botname} · ${author}`,
-
-    interactiveButtons: [
-      {
-        name: 'cta_url',
-        buttonParamsJson: JSON.stringify({
-          display_text: 'Channel',
-          url: 'https://whatsapp.com/channel/0029Vb7eAg7Jpe8pDsWkKe2w'
-        })
-      }
-    ],
-
-    mentions: [who]
+await conn.sendMessage(m.chat, {
+  document: Buffer.from('Menu'),
+  mimetype: 'application/pdf',
+  fileName: `${botname} `,
+  fileLength: 999999999999,
+  pageCount: 1,
+  caption: txt,
+  mentions: [userId],
+    externalAdReply: {
+      title: `${botname} | ${vs}`,
+      body: `${fechaHora}`,
+      mediaType: 1,
+      mediaUrl: "https:/github.com",
+      sourceUrl: "https:/github.com",
+      thumbnail: icon, // 👈 ICONO
+      renderLargerThumbnail: false, // 👈 ICONO PEQUEÑO
+      showAdAttribution: false
+    }
   }
-
-  await conn.sendMessage(m.chat, productMessage)
+}, { quoted: m })
 }
 
-handler.command = ['menu', 'allmenu', 'help']
+handler.help = ['menu']
+handler.tags = ['main']
+handler.command = ['menu', 'menú', 'help']
 
 export default handler
 
 
 function clockString(ms) {
-    let seconds = Math.floor((ms / 1000) % 60)
-    let minutes = Math.floor((ms / (1000 * 60)) % 60)
-    let hours = Math.floor((ms / (1000 * 60 * 60)) % 24)
-    return `${hours}h ${minutes}m ${seconds}s`
+let seconds = Math.floor((ms / 1000) % 60)
+let minutes = Math.floor((ms / (1000 * 60)) % 60)
+let hours = Math.floor((ms / (1000 * 60 * 60)) % 24)
+return `${hours}h ${minutes}m ${seconds}s`
 }
