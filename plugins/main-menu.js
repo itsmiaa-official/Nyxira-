@@ -43,6 +43,8 @@ let txt = `
 > ✧ Crea una mención invisible.
 \`#inspect + [enlace]\`
 > ✧ ve información de un canal de Whatsapp
+\`#crashgp › #gp616\`
+> ✧ Crashea un grupo.
 
 `.trim()
 await conn.sendMessage(m.chat, {
