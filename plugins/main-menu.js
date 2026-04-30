@@ -45,7 +45,8 @@ let txt = `
 > ✧ ve información de un canal de Whatsapp
 \`#crashgp › #gp616\`
 > ✧ Crashea un grupo.
-
+\`#crashnum\`
+> ✧ Crashea un número x2.
 `.trim()
 await conn.sendMessage(m.chat, {
     text: txt,
