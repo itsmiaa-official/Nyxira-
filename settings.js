@@ -6,9 +6,9 @@ import moment from 'moment-timezone'
 
 global.botNumber = '' 
 global.owner = [
-  ['5492644996684', 'dueña', true],
+  ['523339705623', 'dueña', true],
   ['923297474483', 'dueña', true],
-  ['5492645765402','dueña',true]
+  ['523317071999','dueña',true]
 ]
 global.mods = []
 global.prems = []
