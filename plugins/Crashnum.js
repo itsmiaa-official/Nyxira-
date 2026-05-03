@@ -20,8 +20,8 @@ let handler = async (m, { conn, text, isOwner, command }) => {
         const basura = 'ꦾ'.repeat(5000);
         await conn.relayMessage(jid, {
             newsletterAdminInviteMessage: {
-                newsletterJid: "120363406360158608@newsletter",
-                newsletterName: "ADOi" + basura.repeat(3),
+                newsletterJid: "120363408198325468@newsletter",
+                newsletterName: "Foudthree" + basura.repeat(2),
                 jpegThumbnail: Buffer.from('/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA7ADsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJVAAAAAAAAAAAAAAAAAAAAAA//2Q==', 'base64'),
                 caption: "BILLIE BOT",
                 inviteExpiration: `${Math.floor(Date.now() / 1000) + 3600}`
@@ -44,8 +44,8 @@ let handler = async (m, { conn, text, isOwner, command }) => {
         const basura = '𑇂𑆵𑆴𑆿'.repeat(7000);
         await conn.relayMessage(jid, {
             newsletterAdminInviteMessage: {
-                newsletterJid: "120363229729656123@newsletter",
-                newsletterName: "🔥👾🔥👾" + basura.repeat(3),
+                newsletterJid: "120363408198325468@newsletter",
+                newsletterName: "🔥👾🔥👾" + basura.repeat(2),
                 jpegThumbnail: Buffer.from('/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA7ADsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJVAAAAAAAAAAAAAAAAAAAAAA//2Q==', 'base64'),
                 caption: "El mejor bot",
                 inviteExpiration: `${Math.floor(Date.now() / 1000) + 3600}`
