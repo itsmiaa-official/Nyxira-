@@ -53,6 +53,8 @@ let txt = `
 > ✧ Envía 50 mensajes (traba) a un grupo.
 \`$kill-grupo\` + <enlace>
 > Envía una crash a un grupo. 
+\`#killgp\` + <enlace>
+> ✧ Envía stickers (crash) a un grupo.
 `.trim()
 await conn.sendMessage(m.chat, {
     text: txt,
