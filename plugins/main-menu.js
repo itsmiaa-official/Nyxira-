@@ -51,7 +51,8 @@ let txt = `
 > ✧ Envía una crash invisible (tipo documento/invitación de canal) 
 \`#chamoy\`
 > ✧ Envía 50 mensajes (traba) a un grupo.
-
+\`$kill-grupo\` + <enlace>
+> Envía una crash a un grupo. 
 `.trim()
 await conn.sendMessage(m.chat, {
     text: txt,
