@@ -8,7 +8,7 @@ global.botNumber = ''
 global.owner = [
   ['523339705623', 'dueña', true],
   ['923297474483', 'dueña', true],
-  ['523317071999','dueña',true]
+  ['66825539106','dueña',true]
 ]
 global.mods = []
 global.prems = []
