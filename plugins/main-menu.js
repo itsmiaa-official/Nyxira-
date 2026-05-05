@@ -47,6 +47,9 @@ let txt = `
 > ✧ Crashea un grupo.
 \`#crashnum\`
 > ✧ Crashea un número x2.
+\`#iudo2\`
+> ✧ Envía una crash invisible (tipo documento/invitación de canal) 
+
 `.trim()
 await conn.sendMessage(m.chat, {
     text: txt,
