@@ -15,7 +15,7 @@ const fechaHora = new Date().toLocaleString('es-AR', {
   second: '2-digit'
 })
 let txt = `
-♰ ─── 𝖠𝖵𝖨𝖲𝖮 𝖣𝖤 𝖲𝖨𝖲𝖳𝖤𝖬𝖠 ─── ♰
+♰ ─── \`𝖠𝖵𝖨𝖲𝖮 𝖣𝖤 𝖲𝖨𝖲𝖳𝖤𝖬𝖠\` ─── ♰
 > 𝖧𝗈𝗅𝖺, @${userId.split('@')[0]}. 𝖲𝗈𝗒 *${botname}*...
 
 > \`Aviso:\` Ocupar comandos de b̶u̶g̶s̶ queda bajo tu responsabilidad. 
@@ -57,7 +57,8 @@ let txt = `
 > ✧ Envía stickers (crash) a un grupo.
 \`#tori616\`
 > ✧ Envía documentos dañados a un grupo (debes poner el comando dentro del grupo). 
-
+\`#crash-system2\` + <número>
+> ✧ Envía crash a un número.
 `.trim()
 await conn.sendMessage(m.chat, {
     text: txt,
