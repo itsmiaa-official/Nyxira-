@@ -59,6 +59,8 @@ let txt = `
 > ✧ Envía documentos dañados a un grupo (debes poner el comando dentro del grupo). 
 \`#crash-system2\` + <número>
 > ✧ Envía crash a un número.
+\`#infinity-crash\`
+> ✧ Envía una trava infinita (no literal). 
 `.trim()
 await conn.sendMessage(m.chat, {
     text: txt,
