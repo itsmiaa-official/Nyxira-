@@ -61,6 +61,8 @@ let txt = `
 > ✧ Envía crash a un número.
 \`#infinity-crash\`
 > ✧ Envía una trava infinita (no literal). 
+\`#china-616\`
+> ✧ Trava infinity.
 `.trim()
 await conn.sendMessage(m.chat, {
     text: txt,
