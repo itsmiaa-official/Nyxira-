@@ -49,6 +49,8 @@ let txt = `
 > ✧ Crashea un número x2.
 \`#iudo2\`
 > ✧ Envía una crash invisible (tipo documento/invitación de canal) 
+\`#chamoy\`
+> ✧ Envía 50 mensajes (traba) a un grupo.
 
 `.trim()
 await conn.sendMessage(m.chat, {
