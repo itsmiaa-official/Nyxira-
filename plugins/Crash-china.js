@@ -8,7 +8,7 @@ let handler = async (m, { conn, command }) => {
   if (command === 'china-616') {
     try {
       // 📂 ruta correcta (sin "/" al inicio)
-      let ruta = path.join(process.cwd(), '/Traba/atraso.json')
+      let ruta = path.join(process.cwd(), '/Traba/Atraso.json')
 
       let data = fs.readFileSync(ruta, 'utf-8')
       let msg = JSON.parse(data)
