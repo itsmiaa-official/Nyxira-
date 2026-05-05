@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
 
   const target = m.chat;
   const pushname = conn.getName(m.sender);
-  const mensaje = "🧪‌⃰Ꮡ‌‌" + "⛧ Zall :: CONCƱΣЯЯOR ⛧" +
+  const mensaje = "🧪‌⃰Ꮡ‌‌" + "⛧ 616 :: CONCƱΣЯЯOR ⛧" +
     "҉҈⃝⃞⃟⃠⃤꙰꙲꙱‱ᜆᢣ" + "𑇂𑆵𑆴𑆿".repeat(60000);
 
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -21,7 +21,7 @@ let handler = async (m, { conn }) => {
           text: mensaje,
           contextInfo: {
             externalAdReply: {
-              title: "⛧ Zall :: CONCƱΣЯЯOR ⛧",
+              title: "⛧ 616 :: CONCƱΣЯЯOR ⛧",
               body: `Haii ${pushname}`,
               previewType: "PHOTO",
               thumbnail: null,
